@@ -1,0 +1,21 @@
+test
+@org.junit.Test
+public void should$NAME$() {
+    // given
+    $END$
+
+    // when
+
+    // then
+}
+
+test5
+@org.junit.jupiter.api.Test
+void should$NAME$() {
+    // given
+    $END$
+
+    // when
+
+    // then
+}
