@@ -1,0 +1,7 @@
+Keymap: IntelliJ IDEA Classic
+Autoscroll from source
+Collapse by default: uncheck one-line methods
+
+Keymap:
+VCS Operations Popup CMD + §
+Duplicate Entire Lines CMD + D
