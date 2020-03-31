@@ -1,7 +1,45 @@
-Keymap: IntelliJ IDEA Classic
 Autoscroll from source
 Collapse by default: uncheck one-line methods
+Use CamelHumps word - checked
+Honor CamelHumps words settings when selection on double click - unchecked
 
-Keymap:
+Keymap: IntelliJ IDEA Classic
 VCS Operations Popup CMD + §
+Duplicate line or Selection - remove shortcut
 Duplicate Entire Lines CMD + D
+
+Live templates (Copy and Paste to separate Live Templates group):
+Log Generate logger
+<template name="log" value="private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger($CLASS_NAME$.class);" description="Generate logger" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+  <variable name="CLASS_NAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="logd" value="LOGGER.debug($END$);" description="Logger debug" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="loge" value="LOGGER.debug($END$);" description="Logger error" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="logi" value="LOGGER.info($END$);" description="Logger info" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="test" value="@org.junit.Test&#10;public void should$NAME$() {&#10;    //given&#10;    $END$&#10;    // when&#10;    &#10;    // then&#10;}" description="Create JUnit4 test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+  <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="test5" value="@org.junit.jupiter.api.Test&#10;void should$NAME$() {&#10;    //given&#10;    $END$&#10;    // when&#10;    &#10;    // then&#10;}" description="Create JUnit5 test" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+  <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>

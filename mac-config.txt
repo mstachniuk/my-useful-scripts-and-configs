@@ -1,0 +1,24 @@
+# Finder
+# Show all files in Finder
+defaults write com.apple.Finder AppleShowAllFiles true
+
+# Show path in Finder title bar
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder
+
+# Install:
+# ClipMenu (G drive)
+# Amphetamine
+# smcFanControl https://www.eidac.de/
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+# iTerm2
+# https://stackoverflow.com/questions/6205157/iterm-2-how-to-set-keyboard-shortcuts-to-jump-to-beginning-end-of-line
+# ⌘←  "SEND HEX CODE"      0x01 
+# ⌘→  "SEND HEX CODE"      0x05
+# ⌥←  "SEND ESC SEQ"  b
+# ⌥→  "SEND ESC SEQ"  f
+
+Install Oh my ZSH:
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
