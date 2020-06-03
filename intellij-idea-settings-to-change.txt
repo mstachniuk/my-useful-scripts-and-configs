@@ -21,7 +21,7 @@ Log Generate logger
     <option name="JAVA_CODE" value="true" />
   </context>
 </template>
-<template name="loge" value="LOGGER.debug($END$);" description="Logger error" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+<template name="loge" value="LOGGER.error($END$);" description="Logger error" toReformat="false" toShortenFQNames="true" useStaticImport="true">
   <context>
     <option name="JAVA_CODE" value="true" />
   </context>
