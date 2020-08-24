@@ -25,3 +25,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 # Disable Spotlight
 sudo mdutil -a -i off
+
+ShortcutDetective detects which app receives a keyboard shortcut (hotkey).
+https://www.irradiatedsoftware.com/labs/
