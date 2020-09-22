@@ -1,0 +1,9 @@
+Keyboard Layout for Mac.
+It based on PL layout + makes German characters possible:
+ü Option + [
+ü Option + Shift + [
+ö Option + ;
+Ö Option + Shift + ;
+ä Option + '
+Ä Option + Shift + '
+ß Option + \
