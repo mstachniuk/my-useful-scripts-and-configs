@@ -7,3 +7,6 @@ It based on PL layout + makes German characters possible:
 ä Option + '
 Ä Option + Shift + '
 ß Option + \
+
+Instalation
+Just copy pl-de.bundle to /Library/Keyboard Layouts and chode in system preferences
