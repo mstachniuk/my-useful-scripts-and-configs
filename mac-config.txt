@@ -1,3 +1,5 @@
+Install 
+
 # Finder
 # Show all files in Finder
 defaults write com.apple.Finder AppleShowAllFiles true
@@ -6,11 +8,29 @@ defaults write com.apple.Finder AppleShowAllFiles true
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder
 
 # Install:
-# ClipMenu (G drive)
+# Chrome
+# Spotify
+# VS Code
+## View -> Command Palete, type shell command
+# ClipMenu (G drive) or https://clipy-app.com/
 # Amphetamine
 # smcFanControl https://www.eidac.de/
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+# Install git
+brew install git
+# Install Oh my ZSH:
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# Install zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# Configure .zshrc from file in this repo
+# Instal SDKMAN or asdf https://asdf-vm.com/#/core-manage-asdf
+brew install coreutils curl git
+brew install asdf
+# Instal watch
+brew install watch
+
+
 
 # iTerm2
 # https://stackoverflow.com/questions/6205157/iterm-2-how-to-set-keyboard-shortcuts-to-jump-to-beginning-end-of-line
@@ -18,10 +38,8 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Find
 # ⌘→  "SEND HEX CODE"      0x05
 # ⌥←  "SEND ESC SEQ"  b
 # ⌥→  "SEND ESC SEQ"  f
-
-Install Oh my ZSH:
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# ⌥⌘← Previous Tab
+# ⌥⌘→ Next Tab
 
 # Disable Spotlight
 sudo mdutil -a -i off
@@ -34,4 +52,14 @@ System Preferences -> Keyboard -> Text
 br - Best Regards
 mfg - Mit Freundlichen Grüßen
 
+Use F1, F2 keys
+
+Configure Dock
+
+# Bluetooth
+# Show on menu bar
+
+# Mac Pass
+
+# Keyboard PL + DE
 and see pl-de-info.txt

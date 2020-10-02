@@ -10,3 +10,4 @@ It based on PL layout + makes German characters possible:
 
 Instalation
 Just copy pl-de.bundle to /Library/Keyboard Layouts and chode in system preferences
+sudo cp -Rv pl-de.bundle /Library/Keyboard\ Layouts

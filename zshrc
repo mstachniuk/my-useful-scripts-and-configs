@@ -1,24 +1,34 @@
+# Install first and then copy to ~/.zshrc
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+ZSH_THEME="robbyrussell"
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ZSH plugins
 plugins=(
-    git
-    bower
+    asdf
+    aws
     brew
     cp
     docker
     docker-compose
+    git
     helm
-    mvn
+    gcloud
     gradle
     kubectl
+    mvn
     node
     npm
     osx
+    postgres
     sbt
     scala
     sudo
     systemd
     vagrant
+    vscode
     zsh-autosuggestions
 )
 
