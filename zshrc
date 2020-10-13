@@ -44,7 +44,7 @@ alias simpleHttpServer='python -m SimpleHTTPServer 8000'
 alias fastBuild='./gradlew build -x test -x integrationTest -x checkstyleMain -x testUI -x validateUI -x javadoc'
 alias usunFolderOut='find . -name "out" -not -path "*/node_modules/*" -exec rm -rf {} \;'
 alias searchInGit="git log --pretty=short --raw  -S$1"
-alias gitRoot="cd (git rev-parse --show-cdup)"
+alias gitRoot="cd $(git rev-parse --show-cdup)"
 alias dockerKillAll='docker kill $(docker ps -a -q) && docker container rm -fv $(docker container ls -aq) || echo "No container to clear"'
 alias killDns='dscacheutil -flushcache & sudo killall -HUP mDNSResponder'
 alias gitOldBranches="git for-each-ref --sort=-committerdate --format='%(color:cyan)%(authordate:relative)   %(color:red)%(authorname)   %(color:white)%(color:bold)%(refname:short)' refs/remotes"

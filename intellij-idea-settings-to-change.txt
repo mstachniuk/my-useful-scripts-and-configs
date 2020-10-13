@@ -1,13 +1,20 @@
-Autoscroll from source
-Collapse by default: uncheck one-line methods
+Autoscroll from source / Always Select Opened File
+Collapse by default / Fold by default: uncheck one-line methods
 Use CamelHumps word - checked
 Honor CamelHumps words settings when selection on double click - unchecked
+
+Quick Lists -> Create MyList
+Toggle Presentation mode
+Split Vertically
+Compare With... (Git)
+Reset Font Size
 
 Keymap: IntelliJ IDEA Classic
 VCS Operations Popup CMD + §
 Duplicate line or Selection - remove shortcut
 Duplicate Entire Lines CMD + D
 Delete line CMD + Backspace
+MyList Ctrl + /
 
 Live templates (Copy and Paste to separate Live Templates group):
 Log Generate logger
@@ -32,13 +39,13 @@ Log Generate logger
     <option name="JAVA_CODE" value="true" />
   </context>
 </template>
-<template name="test" value="@org.junit.Test&#10;public void should$NAME$() {&#10;    //given&#10;    $END$&#10;    // when&#10;    &#10;    // then&#10;}" description="Create JUnit4 test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+<template name="test" value="@org.junit.Test&#10;public void should$NAME$() {&#10;    // given&#10;    $END$&#10;    // when&#10;    &#10;    // then&#10;}" description="Create JUnit4 test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
   <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
   <context>
     <option name="JAVA_CODE" value="true" />
   </context>
 </template>
-<template name="test5" value="@org.junit.jupiter.api.Test&#10;void should$NAME$() {&#10;    //given&#10;    $END$&#10;    // when&#10;    &#10;    // then&#10;}" description="Create JUnit5 test" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+<template name="test5" value="@org.junit.jupiter.api.Test&#10;void should$NAME$() {&#10;    // given&#10;    $END$&#10;    // when&#10;    &#10;    // then&#10;}" description="Create JUnit5 test" toReformat="false" toShortenFQNames="true" useStaticImport="true">
   <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
   <context>
     <option name="JAVA_CODE" value="true" />

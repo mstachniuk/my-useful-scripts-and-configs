@@ -7,6 +7,10 @@ defaults write com.apple.Finder AppleShowAllFiles true
 # Show path in Finder title bar
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder
 
+# Don ot create .DS_Store files evrywhere
+# https://www.techrepublic.com/article/how-to-disable-the-creation-of-dsstore-files-for-mac-users-folders/
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
 # Install:
 # Chrome
 # Spotify
