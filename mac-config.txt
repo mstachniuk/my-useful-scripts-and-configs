@@ -33,8 +33,8 @@ brew install coreutils curl git
 brew install asdf
 # Instal watch
 brew install watch
-
-
+# Install gw command
+brew install gdub
 
 # iTerm2
 # https://stackoverflow.com/questions/6205157/iterm-2-how-to-set-keyboard-shortcuts-to-jump-to-beginning-end-of-line
@@ -67,3 +67,6 @@ Configure Dock
 
 # Keyboard PL + DE
 and see pl-de-info.txt
+
+Open iTerm Tab/window in Finder:
+https://www.howtogeek.com/210147/how-to-open-terminal-in-the-current-os-x-finder-location/
