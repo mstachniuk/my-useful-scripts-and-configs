@@ -32,6 +32,17 @@ plugins=(
     zsh-autosuggestions
 )
 
+# https://stackoverflow.com/questions/57700953/how-can-i-disable-git-checkout-in-git-2-23/57702206#57702206
+git () {
+    if [ "$1" = "checkout" ]
+    then
+        echo "Don't use checkout; use switch or restore." >&2
+        return 1
+    else
+        command git "$@"
+    fi
+}
+
 alias zaleznosciModulu="../gradlew :$(pwd | grep -o '[^/]*$'):dependencies --configuration compile"
 alias zaleznosciTestoweModulu="../gradlew :$(pwd | grep -o '[^/]*$'):dependencies --configuration testCompile"
 alias otwartePorty='netstat -ap tcp | grep -i "listen"'
