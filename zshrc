@@ -45,6 +45,7 @@ alias fastBuild='./gradlew build -x test -x integrationTest -x checkstyleMain -x
 alias usunFolderOut='find . -name "out" -not -path "*/node_modules/*" -exec rm -rf {} \;'
 alias searchInGit="git log --pretty=short --raw  -S$1"
 alias gitRoot="cd `git rev-parse --show-cdup`"
+alias gitRemoveMerged='git branch --merged | grep -v master | xargs git branch -d'
 alias dockerKillAll='docker kill $(docker ps -a -q)'
 alias dockerRemoveContainers='docker container rm -fv $(docker container ls -aq) || echo "No containers to remove"'
 alias killDns='dscacheutil -flushcache & sudo killall -HUP mDNSResponder'
