@@ -29,7 +29,7 @@ plugins=(
     systemd
     vagrant
     vscode
-    zsh-autosuggestions
+    # zsh-autosuggestions
 )
 
 alias zaleznosciModulu="../gradlew :$(pwd | grep -o '[^/]*$'):dependencies --configuration compile"
@@ -55,3 +55,6 @@ alias k='kubectl'
 alias kns='kubens'
 alias kDeletePVC="kubectl delete pvc --all"
 alias kDeleteAllPods="kubectl delete $(k get pods -o name)"
+
+# https://stackoverflow.com/questions/19305291/remnant-characters-when-tab-completing-with-zsh
+export LC_ALL="en_US.UTF-8"
