@@ -32,13 +32,14 @@ plugins=(
     # zsh-autosuggestions
 )
 
-alias zaleznosciModulu="../gradlew :$(pwd | grep -o '[^/]*$'):dependencies --configuration implementation"
-alias zaleznosciTestoweModulu="../gradlew :$(pwd | grep -o '[^/]*$'):dependencies --configuration testCompile"
+alias zaleznosciModulu='../gradlew :$(pwd | grep -o "[^/]*$"):dependencies --configuration implementation'
+alias zaleznosciTestoweModulu='../gradlew :$(pwd | grep -o "[^/]*$"):dependencies --configuration testImplementation'
 alias otwartePorty='netstat -ap tcp | grep -i "listen"'
 alias otwartePorty2='lsof -PiTCP -sTCP:LISTEN'
 alias ubicPostgres="killall postgres"
 alias coTakGlosno="top -u"
 alias szukajWPlikach="grep -rnw . -e $1"
+alias zamienWPlikach='find . -type f -print0 | xargs -0 sed -i "" "s/$1/$2/g"'
 alias usunLockfile='git checkout -- "*.lockfile"'
 alias usunDsStore='find . -name ".DS_Store" -exec rm {} \;'
 alias simpleHttpServer='python -m SimpleHTTPServer 8000'
@@ -55,8 +56,8 @@ alias gitOldBranches="git for-each-ref --sort=-committerdate --format='%(color:c
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias k='kubectl'
 alias kns='kubens'
-alias kDeletePVC="kubectl delete pvc --all"
-alias kDeleteAllPods="kubectl delete $(k get pods -o name)"
+alias kDeletePVC='kubectl delete pvc --all'
+alias kDeleteAllPods='kubectl delete $(k get pods -o name)'
 
 # https://stackoverflow.com/questions/19305291/remnant-characters-when-tab-completing-with-zsh
 export LC_ALL="en_US.UTF-8"
