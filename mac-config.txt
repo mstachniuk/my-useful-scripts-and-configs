@@ -10,6 +10,8 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Find
 # Don ot create .DS_Store files evrywhere
 # https://www.techrepublic.com/article/how-to-disable-the-creation-of-dsstore-files-for-mac-users-folders/
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+sudo mdutil -i off -d /Volumes/<VOLUME NAME>
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Install:
 # Chrome
