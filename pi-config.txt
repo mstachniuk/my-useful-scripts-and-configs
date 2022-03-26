@@ -1,0 +1,64 @@
+1. Download and install on SD Card
+https://www.raspberrypi.com/software/
+
+2. Enable SSH
+cd /Volumes/boot
+touch ssh
+Create ssh file on boot Partition
+
+ssh pi@pi
+Password: raspberry
+
+3. Change password
+passwd
+
+4. Configure vi
+vi ~/.vimrc
+:set backspace=indent,eol,start
+:set nocp
+
+sudo cp ~/.vimrc /root/
+
+4. sudo raspi-config
+Localization options
+
+5. Copy ssh key
+mkdir .ssh
+vi ~/.ssh/authorized_keys
+Paste from ~/.ssh/id_rsa.pub
+
+
+6. Fix locale warning:
+sudo sed -i 's/AcceptEnv LANG LC_\*/AcceptEnv no/g' /etc/ssh/sshd_config
+
+sudo vi /etc/ssh/sshd_config 
+AcceptEnv LANG LC_* -> AcceptEnv no
+
+7. sudo apt-get update && sudo apt-get upgrade
+
+8. NordVPN
+https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Raspberry-Pi-Elementary-OS-and-Linux-Mint.htm
+sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
+sudo reboot now
+nordvpn whitelist add subnet 192.168.0.0/16
+nordvpn login --legacy
+nordvpn set autoconnect enabled Poland
+nordvpn connect Poland
+
+
+8 Proxy Server
+https://www.howtogeek.com/683971/how-to-use-a-raspberry-pi-as-a-proxy-server-with-privoxy/
+sudo apt-get install privoxy
+sudo vi /etc/privoxy/config
+
+listen-address :8118
+
+sudo systemctl restart privoxy
+sudo systemctl status privoxy
+
+
+
+--- usefull
+logs:
+/var/log/syslog
+journalctl
