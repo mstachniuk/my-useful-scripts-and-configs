@@ -10,11 +10,14 @@ Compare With... (Git)
 Reset Font Size
 
 Keymap: IntelliJ IDEA Classic
-VCS Operations Popup CMD + §
+VCS Operations CMD + § CMD + Esc
 Duplicate line or Selection - remove shortcut
 Duplicate Entire Lines CMD + D
 Delete line CMD + Backspace
 MyList Ctrl + /
+
+Plugins to install:
+Presentations Assistant - to show shortcuts you click
 
 Live templates (Copy and Paste to separate Live Templates group):
 Log Generate logger

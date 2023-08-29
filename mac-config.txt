@@ -54,9 +54,10 @@ ShortcutDetective detects which app receives a keyboard shortcut (hotkey).
 https://www.irradiatedsoftware.com/labs/
 
 Keyboard shortcuts:
-System Preferences -> Keyboard -> Text
+System Preferences -> Keyboard -> Text (Zastąpienia tekstu)
 br - Best Regards
 mfg - Mit Freundlichen Grüßen
+Un - Unfortunately
 
 Use F1, F2 keys
 
