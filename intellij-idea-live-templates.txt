@@ -19,3 +19,6 @@ void should$NAME$() {
 
     // then
 }
+
+ass
+org.assertj.core.api.Assertions.assertThat($OBJECT_NAME$).$END$
